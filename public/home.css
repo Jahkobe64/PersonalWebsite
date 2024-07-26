@@ -1,10 +1,13 @@
 body{
     /* background-color: #edc79b; */
     /* background: no-repeat center center fixed; */
-    background-image: url('/videogamebackground2.png');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)),
+    url("/videogamebackground2.png");
     background-color:  rgb(237, 199, 155) !important;
     background-size: 100vw 100vh;
     background-repeat: no-repeat;
+    animation-name: example;
+    animation-duration: 1s;
 }
 
 .mainTitle {
@@ -13,15 +16,24 @@ body{
     padding-top: 4em;
     text-align: center;
     font-weight:900 !important;
-    color:rgb(138, 138, 138) !important;
+    color:rgb(255, 255, 255) !important;
     text-shadow: 2px 2px 4px black;
 }
 
 .navbar {
-    background-color: rgb(237, 199, 155);
+    background-color: rgb(237, 199, 155, 0.1);
     box-shadow: .5px .5px 1px .5px rgba(0,0,0,.8);
 }
 
 .nav-item{
     font-weight:600 !important;
 }
+
+@keyframes example {
+    0% {background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/videogamebackground2.png");}
+    20% {background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/videogamebackground2.png");}
+    40% {background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/videogamebackground2.png");}
+    60% {background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/videogamebackground2.png");}
+    80% {background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("/videogamebackground2.png");}
+  }
+  
