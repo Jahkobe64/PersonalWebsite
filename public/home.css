@@ -1,0 +1,27 @@
+body{
+    /* background-color: #edc79b; */
+    /* background: no-repeat center center fixed; */
+    background-image: url('/videogamebackground2.png');
+    background-color:  rgb(237, 199, 155) !important;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+}
+
+.mainTitle {
+    font-size:5em !important;
+    font-family:fantasy;
+    padding-top: 4em;
+    text-align: center;
+    font-weight:900 !important;
+    color:rgb(138, 138, 138) !important;
+    text-shadow: 2px 2px 4px black;
+}
+
+.navbar {
+    background-color: rgb(237, 199, 155);
+    box-shadow: .5px .5px 1px .5px rgba(0,0,0,.8);
+}
+
+.nav-item{
+    font-weight:600 !important;
+}
